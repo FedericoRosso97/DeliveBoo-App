@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('restaurant', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->required();
+            $table->string('address')->required();
+            $table->integer('VAT_number')->required();
+            //$table->string('email')->unique();
+            $table->float('opening_time')->required();
+            $table->string('image');
+            $table->string('telephone_number');
+            $table->float('vote');
             $table->timestamps();
         });
     }
