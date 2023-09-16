@@ -26,7 +26,7 @@ class RestaurantSeeder extends Seeder
             $restaurant->opening_time= $faker->randomFloat(2, 1, 12);
             $restaurant->image= $faker->imageUrl(640, 480, 'foods', true);
             $restaurant->telephone_number = $faker->phoneNumber();
-            $restaurant->vote= $faker->randomFloat(2, 0, 5);
+            $restaurant->vote= $faker->randomFloat(2, 1, 5);
             $restaurant->save();
         }
         
