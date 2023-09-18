@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Plate;
 
 class PlateController extends Controller
 {
@@ -12,7 +13,14 @@ class PlateController extends Controller
      */
     public function index()
     {
-        //
+        $plates = Plate::paginate(10);
+
+        return response()->json(
+            [
+                'success' => true,
+                'results' => $plates,
+            ]
+        );
     }
 
     /**
@@ -37,6 +45,13 @@ class PlateController extends Controller
     public function show(string $id)
     {
         //
+
+        $plate = Plate::findOrFail($id);
+
+        return response()->json([
+            'success' => true,
+            'results' => $plate
+        ]);
     }
 
     /**
