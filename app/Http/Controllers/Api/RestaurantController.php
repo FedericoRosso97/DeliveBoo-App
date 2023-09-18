@@ -44,6 +44,13 @@ class RestaurantController extends Controller
     public function show(string $id)
     {
         //
+        $restaurant = Restaurant::findOrFail($id);
+
+        return response()->json([
+            'success'=>true,
+            'result'=>$restaurant
+
+        ]);
     }
 
     /**
