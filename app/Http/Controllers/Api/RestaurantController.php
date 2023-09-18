@@ -56,6 +56,7 @@ class RestaurantController extends Controller
                 'errors' => $validation->errors(),
             ]);
 
+            $restaurant = Project::create($data);
             return response()->json([
                 'success' => true
             ]);
