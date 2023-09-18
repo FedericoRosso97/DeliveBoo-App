@@ -81,6 +81,14 @@ class PlateSeeder extends Seeder
                 'image' => 'https://www.youkimagenta.it/wp-content/uploads/2020/11/202-salmon-flambe.jpg',
                 'visibility' => true,
             ],
+            [
+                'name' => 'Salmone  philadelphia roll',
+                'description' => '9pz di roll con avocado, salmone, philadelphia e sesamo',
+                'plate_price' => '10,00 €',
+                'image' => 'https://www.principatodilucedio.it/admin/public/ricette/e96ead09d1aef03b908caa687d2d193f/thumb999_sushi_1563270300_1563270300.jpg',
+                'visibility' => true,
+            ],
+            
         ];
 
         foreach ($plateList as $plate){
