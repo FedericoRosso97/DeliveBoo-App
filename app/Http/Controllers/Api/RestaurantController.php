@@ -43,7 +43,6 @@ class RestaurantController extends Controller
             [
                 'name' => ['required', 'max: 60'],
                 'address'=>['required','max:60'],
-                'address'=>['required','max:60'],
                 'email' =>['required','max:60'],
                 'opening_time'=>'required',
                 'image' => 'required',
