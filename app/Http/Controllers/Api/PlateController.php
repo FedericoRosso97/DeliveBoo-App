@@ -29,12 +29,12 @@ class PlateController extends Controller
     public function create()
     {
         //
-        $data = $request->all();
-        $plate = Plate::create($data);
+        // $data = $request->all();
+        // $plate = Plate::create($data);
 
-        return response()->json([
-            'success' => true
-        ]);
+        // return response()->json([
+        //     'success' => true
+        // ]);
     }
 
     /**
@@ -61,6 +61,12 @@ class PlateController extends Controller
             return response()->json([
                 'success' => false,
                 'errors' => $validation->errors(),
+            ]);
+
+            $plate = Plate::create($data);
+            
+            return response()->json([
+                'success' => true
             ]);
         }
     }
