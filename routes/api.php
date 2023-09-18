@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/plates', [ ApiPlateController::class, 'index' ])->name('api.plates.index');
 
 Route::get('/plates/{plate}', [  ApiPlateController::class, 'show' ])->name('api.plates.show');
+
+Route::post('/plates/create', [ ApiPlateController::class, 'store'])->name('api.plates.create');

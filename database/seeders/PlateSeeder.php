@@ -60,6 +60,35 @@ class PlateSeeder extends Seeder
                 'image' => 'https://www.eurofoodservice.it/7048-large_default/cotolpollo-patate-spic4x300gsur.jpg',
                 'visibility' => true,
             ],
+            [
+                'name' => 'Smoke Burgez Menu',
+                'description' => 'Carne, cheddar, bacon e Smoke Burgez Sauce',
+                'plate_price' => '7,45 €',
+                'image' => 'https://static.mymenu.it/multimedia/img/eatery/745/burgez%20ante.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'Manu Crash burger',
+                'description' => 'Comprende Carne, cheddar, cipolla grigliata, cetriolini, bacon e Smoke Burgez Sauce - le patatine fritte e la bevanda a scelta',
+                'plate_price' => '14,80 €',
+                'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9nnvAxIR63L5aMgDCYmrEchT2ACdZQlyYmub_bcLbLDFWtFLvY6cspXy5oVf-xggQ_Ow&usqp=CAU',
+                'visibility' => false,
+            ],
+            [
+                'name' => 'Tempura roll flambe',
+                'description' => '8pz di roll con tempura e avocado  esterno salmone alla fiamma con salsa teriyaki e sesamo',
+                'plate_price' => '13,90 €',
+                'image' => 'https://www.youkimagenta.it/wp-content/uploads/2020/11/202-salmon-flambe.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'Salmone  philadelphia roll',
+                'description' => '9pz di roll con avocado, salmone, philadelphia e sesamo',
+                'plate_price' => '10,00 €',
+                'image' => 'https://www.principatodilucedio.it/admin/public/ricette/e96ead09d1aef03b908caa687d2d193f/thumb999_sushi_1563270300_1563270300.jpg',
+                'visibility' => true,
+            ],
+            
         ];
 
         foreach ($plateList as $plate){
