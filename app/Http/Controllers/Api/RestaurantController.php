@@ -57,6 +57,7 @@ class RestaurantController extends Controller
             ]);
 
             $restaurant = Project::create($data);
+            
             return response()->json([
                 'success' => true
             ]);
