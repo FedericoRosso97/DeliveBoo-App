@@ -12,4 +12,8 @@ class Restaurant extends Model
     public function typologies() {
         return $this->belongsToMany('App\Models\Typology');
     }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
