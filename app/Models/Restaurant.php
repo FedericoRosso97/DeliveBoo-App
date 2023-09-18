@@ -9,7 +9,7 @@ class Restaurant extends Model
 {
     use HasFactory;
 
-    public function typology() {
-        return $this->hasMany(Typology::class);
+    public function typologies() {
+        return $this->belongsToMany('App\Models\Typology');
     }
 }
