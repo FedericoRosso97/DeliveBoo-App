@@ -64,6 +64,7 @@ class PlateController extends Controller
             ]);
         }
        $plate = Project::create($data);
+      
        return response()->json([
         'success' => true
     ]);
