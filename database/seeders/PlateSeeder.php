@@ -39,6 +39,27 @@ class PlateSeeder extends Seeder
                 'image' => 'https://upload.wikimedia.org/wikipedia/commons/1/11/Pizza_marinara.jpg',
                 'visibility' => false,
             ],
+            [
+                'name' => 'Spaghetti Tricolore',
+                'description' => 'Spaghetti con passata di Pomodoro e stracciatella',
+                'plate_price' => '11,50 €',
+                'image' => 'https://www.uomosenzatonno.com/wp-content/uploads/2015/04/TEXT_2.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'La Carbonara',
+                'description' => 'Piatto di Spaghetti di Semola alla Carbonara',
+                'plate_price' => '11,00 €',
+                'image' => 'https://www.cucchiaio.it/content/cucchiaio/it/ricette/2009/11/ricetta-spaghetti-carbonara/_jcr_content/header-par/image_single.img.jpg/1617198167116.jpg',
+                'visibility' => false,
+            ],
+            [
+                'name' => 'Cotoletta di Pollo con Patate a Spicchio',
+                'description' => 'La vera Cotoletta di Pollo Milanese con contorno di Patate a Spicchio',
+                'plate_price' => '13,90 €',
+                'image' => 'https://www.eurofoodservice.it/7048-large_default/cotolpollo-patate-spic4x300gsur.jpg',
+                'visibility' => true,
+            ],
         ];
 
         foreach ($plateList as $plate){
