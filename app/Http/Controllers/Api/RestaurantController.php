@@ -28,6 +28,7 @@ class RestaurantController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -36,6 +37,29 @@ class RestaurantController extends Controller
     public function store(Request $request)
     {
         //
+        $data = $request->all();
+
+        $validation = Validator::make($data,
+            [
+                'name' => ['required', 'max: 60'],
+                'address'=>['required','max:60'],
+                'address'=>['required','max:60'],
+                'email' =>['required','max:60'],
+                'opening_time'=>'required',
+                'image' => 'required',
+                'telephone_number' => 'required',
+            ]);
+
+        if ( $validation->fails()){
+            return response()->json([
+                'success' => false,
+                'errors' => $validation->errors(),
+            ]);
+
+            return response()->json([
+                'success' => true
+            ]);
+        }
     }
 
     /**
