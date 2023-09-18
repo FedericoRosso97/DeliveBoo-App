@@ -15,7 +15,10 @@ class TypologySeeder extends Seeder
     public function run(Faker $faker): void
     {
         //
-        $Array =['italiano','giapponese','pizzeria','ristorante','cinese'];
+        $Array =[
+                 'italiano', 'internazionale', 'cinese', 'giapponese','messicano', 
+                 'indiano', 'pesce', 'carne', 'pizza',
+                ];
       
         foreach ($Array as $array){
           
