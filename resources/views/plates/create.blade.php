@@ -26,6 +26,12 @@
             <input type="file" name="image" id="image" class="form-control" placeholder="Upload your image" value="{{ old('image', '') }}">
         </div>
 
+
+        <div class="radio">
+            <label><input name="visibility" type="radio" value="0">No </label>
+            <label><input name="visibility" type="radio" value="1">Yes</label>
+        </div>
+
         
         <button type="submit" class="btn btn-primary">Create New Plate</button>
         <button type="reset" class="btn btn-warning">Reset</button>
