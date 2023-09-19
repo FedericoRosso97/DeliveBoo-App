@@ -54,8 +54,9 @@
                         </div>
 
                         
+                        
                         <div class="row mb-3">
-                            <label for="address" class="col-md-4 col-form-label text-md-end">{{ __('Indirizzo) }}</label>
+                            <label for="address" class="col-md-4 col-form-label text-md-end">{{ __('Indirizzo') }}</label>
 
                             <div class="col-md-6">
                                 <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address">
@@ -67,7 +68,6 @@
                                 @enderror
                             </div>
                         </div>
-
                         
                         <div class="row mb-3">
                             <label for="VAT_number" class="col-md-4 col-form-label text-md-end">{{ __('Partita Iva') }}</label>
