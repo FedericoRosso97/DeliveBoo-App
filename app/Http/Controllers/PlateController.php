@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Plate;
+use Illuminate\Validation\Rule;
 
 class PlateController extends Controller
 {
@@ -60,17 +61,31 @@ class PlateController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Plate $plate)
     {
         //
+
+        return view ('plates.edit', compact('plate'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Plate $plate)
     {
         //
+        $data = $request->validate([
+            'name' => ['required', Rule::unique('plates')->ignore($plate->id), 'max: 60', 'min:4'],
+            'description' => ['required', 'max: 60'],
+            'description' => ['required', 'max: 60'],
+            'plate_price' => 'required',
+            'image' => 'required',
+            'visibility' => 'required|in:0,1',
+
+        ]);
+
+        $plate->update($data);
+        return redirect()->route('plates.show', compact('plate'));
     }
 
     /**
