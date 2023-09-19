@@ -10,6 +10,11 @@
             <p>
                 {{ $plate->plate_price }}
             </p>
+            <button type="button">
+                <a href="{{ route ('plates.show', $plate->id)}}">
+                    show
+                </a>
+            </button>
         </li>
     @endforeach
 
