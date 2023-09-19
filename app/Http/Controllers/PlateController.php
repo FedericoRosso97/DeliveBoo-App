@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Plate;
 
 class PlateController extends Controller
 {
@@ -12,6 +13,8 @@ class PlateController extends Controller
     public function index()
     {
         //
+        $plates = Plate::all();
+        return view('plates.index', compact('plates'));
     }
 
     /**
