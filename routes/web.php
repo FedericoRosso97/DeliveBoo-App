@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PlateController as PlateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::middleware('auth')->group( function() {
+    Route::resource('/plates', PlateController::class);
+});
