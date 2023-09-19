@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Typology;
 use Illuminate\Http\Request;
 
 class TypologyController extends Controller
@@ -13,6 +14,12 @@ class TypologyController extends Controller
     public function index()
     {
         //
+        $typology = Typology::all();
+        return response()->json([
+            'success'=>true,
+            'result'=>$typology 
+
+        ]);
     }
 
     /**
@@ -21,12 +28,12 @@ class TypologyController extends Controller
     public function create()
     {
         //
-        $typology = Typology::all();
-        return response()->json([
-            'success'=>true,
-            'result'=>$typology 
+        // $typology = Typology::all();
+        // return response()->json([
+        //     'success'=>true,
+        //     'result'=>$typology 
 
-        ]);
+        // ]);
     }
 
     /**
