@@ -17,8 +17,8 @@ class OrderSeeder extends Seeder
     {
         //
             $statusList = [
-                "The rider is delivering . . .",
-                "Your order has been collected by the rider . . .",
+                "Delivered",
+                "Delivering",
             ];
 
         for ($i=0; $i < 20; $i++){
