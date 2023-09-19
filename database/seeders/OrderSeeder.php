@@ -21,7 +21,7 @@ class OrderSeeder extends Seeder
                 "Delivering",
             ];
 
-        for ($i=0; $i < 20; $i++){
+        for ($i=0; $i < 100; $i++){
             $newOrder = new Order();
             $newOrder->status_order = $faker->randomElement($statusList);
             $newOrder->phone_number = $faker->phoneNumber;
