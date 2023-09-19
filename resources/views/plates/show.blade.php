@@ -11,7 +11,7 @@
     </h3>
     <img src="{{$plate->image}}" alt="{{$plate->name}}">
     <p>
-        {{$plate->visibility}}
+        {{$plate->visibility}} <!--SE E' 0 ALLORA NON E' DISPONIBILE, ALTRIMENTI E' DISPONIBILE-->
     </p>
 
 </div>
