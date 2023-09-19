@@ -46,31 +46,31 @@ class PlateController extends Controller
     {
         //
 
-        $data = $request->all();
+        // $data = $request->all();
 
-        $validation = Validator::make($data,
-            [
-                'name' => ['required', 'max: 60'],
-                'description' => ['required', 'max: 60'],
-                'description' => ['required', 'max: 60'],
-                'plate_price' => 'required',
-                'image' => 'not required',
-                'visibility' => 'required',
+        // $validation = Validator::make($data,
+        //     [
+        //         'name' => ['required', 'max: 60'],
+        //         'description' => ['required', 'max: 60'],
+        //         'description' => ['required', 'max: 60'],
+        //         'plate_price' => 'required',
+        //         'image' => 'not required',
+        //         'visibility' => 'required',
 
-            ]);
+        //     ]);
 
-        if ( $validation->fails()){
-            return response()->json([
-                'success' => false,
-                'errors' => $validation->errors(),
-            ]);
+        // if ( $validation->fails()){
+        //     return response()->json([
+        //         'success' => false,
+        //         'errors' => $validation->errors(),
+        //     ]);
 
-            $plate = Plate::create($data);
+        //     $plate = Plate::create($data);
             
-            return response()->json([
-                'success' => true
-            ]);
-        }
+        //     return response()->json([
+        //         'success' => true
+        //     ]);
+        // }
     }
 
     /**
