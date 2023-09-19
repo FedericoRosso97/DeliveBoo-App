@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 //<<<<<<< HEAD
 use App\Http\Controllers\Api\RestaurantController;
+use App\Http\Controllers\Api\typologyController;
 //=======
 use App\Http\Controllers\Api\PlateController as ApiPlateController;
 //>>>>>>> plate-crud
