@@ -28,6 +28,7 @@
 
 
         <div class="radio">
+            Available
             <label><input name="visibility" type="radio" value="0">No </label>
             <label><input name="visibility" type="radio" value="1">Yes</label>
         </div>
