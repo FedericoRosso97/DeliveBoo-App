@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header my-dashboard-header text-light">{{ __('Dashboard') }}</div>
 
-                <div class="card-body">
+                <div class="card-body d-flex">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -18,7 +18,7 @@
                         <ul>
                             <li>
                                 <a href="">
-                                    Il mio profilo
+                                    Il mio ristorante
                                 </a>
                             </li>
 
@@ -41,8 +41,37 @@
                             </li>
                         </ul>
                     </nav>
-                    <section class="my-main-section">
-                        
+                    
+                    <section class="my-dashboard-content ms-5">
+                        <h2 class="mb-4">
+                            Il mio ristorante:
+                        </h2>
+                        <p>
+                            Nome:
+                        </p>
+                        <p>
+                            Indirizzo:
+                        </p>
+                        <p>
+                            Email:
+                        </p>
+                        <p>
+                            Orario di apertura:
+                        </p>
+                        <p>
+                            immagine:
+                        </p>
+                        <p>
+                            Numero di telefono:
+                        </p>
+                        <div class="d-flex">
+                            <button class="btn btn-primary me-3">
+                                Edita
+                            </button>
+                            <button class="btn btn-danger">
+                                Elimina
+                            </button>
+                        </div>
                     </section>
                 </div>
             </div>
