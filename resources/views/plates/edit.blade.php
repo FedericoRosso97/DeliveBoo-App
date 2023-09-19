@@ -2,7 +2,7 @@
     <h1 class='text-center mb-5'>
         Create New Plate
     </h1>
-    <form action="{{ route ('plates.update')}}" method='POST'>
+    <form action="{{ route ('plates.update', $plate)}}" method='POST'>
     @csrf
     @method('PUT')
 
