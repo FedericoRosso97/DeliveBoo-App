@@ -32,6 +32,19 @@ class PlateController extends Controller
     public function store(Request $request)
     {
         //
+
+        $data = $request->validate([
+            'name' => ['required', 'unique:plates', 'max: 60', 'min:4'],
+            'description' => ['required', 'max: 60'],
+            'description' => ['required', 'max: 60'],
+            'plate_price' => 'required',
+            'image' => 'required',
+            'visibility' => 'required|in:0,1',
+
+        ]);
+
+        $plate = Plate::create($data);
+        return redirect()->route('plates.index', compact('plate'));
     }
 
     /**
