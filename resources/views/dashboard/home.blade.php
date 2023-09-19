@@ -66,12 +66,8 @@
                         </p>
                         <div class="d-flex">
                             <button class="btn btn-primary me-3">
-                                Edita
+                                Modifica i tuoi dati
                             </button>
-                            <button class="btn btn-danger">
-                                Elimina
-                            </button>
-                        </div>
                     </section>
                 </div>
             </div>
