@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             OrderSeeder::class,
             PlateSeeder::class,
+            OrderPlateSeeder::class,
         ]);
     }
 }
