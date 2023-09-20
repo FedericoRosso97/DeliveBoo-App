@@ -19,4 +19,8 @@ class Plate extends Model
         'image',
         'visibility'
     ];
+
+    public function orders(){
+        return $this->belongsToMany(Order::class);
+    }
 }
