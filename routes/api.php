@@ -30,5 +30,9 @@ Route::get('/plates', [ ApiPlateController::class, 'index' ])->name('api.plates.
 
 Route::get('/plates/{plate}', [  ApiPlateController::class, 'show' ])->name('api.plates.show');
 
+<<<<<<< HEAD
 Route::post('/plates/create', [ ApiPlateController::class, 'store'])->name('api.plates.create');
 //>>>>>>> plate-crud
+=======
+
+>>>>>>> plate-crud
