@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('activity_name');
-            $table->string('address');
-            $table->string('VAT_number');
+            //$table->string('activity_name');
+            //$table->string('address');
+            // $table->string('VAT_number');
             //$table->string('typology');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

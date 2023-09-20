@@ -24,7 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //<<<<<<< HEAD
-Route::get('/restaurant', [ RestaurantController::class, 'index' ])->name('api.restaurants.index');
+Route::get('/restaurant', [ RestaurantController::class, 'index' ])->name('restaurants.index');
 //=======
 Route::get('/plates', [ ApiPlateController::class, 'index' ])->name('api.plates.index');
 
