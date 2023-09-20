@@ -13,6 +13,8 @@ class TypologyController extends Controller
     public function index()
     {
         //
+        $typology = Typology::all();
+        return view('auth.register', compact('typology'));
     }
 
     /**
