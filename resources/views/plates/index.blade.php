@@ -15,30 +15,30 @@
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <body class="p-0 m-0 border-0 bd-example m-0 border-0">
     <!-- Example Code -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">logo deliveboo</a>
+    <a class="navbar-brand text-warning link-underline" href="#"><img src="" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Add a new food</a>
+          <a class="nav-link active text-warning" href="#">Add a new food</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
+          <a class="nav-link active text-warning" aria-current="page" href="#">Torna alla dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Vai a restaurant</a>
+          <a class="nav-link active text-warning" aria-current="page" href="#">Vai a restaurant</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -46,21 +46,8 @@
 
     @foreach ($plates as $plate)
     
-    <div class="card mb-5 mt-3 m-auto" style="width: 18rem">
-  <svg
-    class="bd-placeholder-img card-img-top"
-    width="100%"
-    height="180"
-    xmlns="http://www.w3.org/2000/svg"
-    role="img"
-    aria-label="Placeholder: Image cap"
-    preserveAspectRatio="xMidYMid slice"
-    focusable="false"
-  >
-    <title>Placeholder</title>
-    <rect width="100%" height="100%" fill="#868e96"></rect>
-    <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-  </svg>
+    <div class="card mb-5 mt-5 m-auto" style="width: 18rem">
+    <img src="{{$plate->image}}" alt="{{$plate->name}}">
   <div class="card-body">
     <div class="d-flex justify-content-between">
     <h5 class="card-title fw-bold">{{ $plate->name }}</h5>
