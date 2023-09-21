@@ -7,6 +7,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>myOrders</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
   <nav class="navbar navbar-expand-lg bg-primary">
@@ -36,25 +37,25 @@
     
     <ul>
       @foreach ($orders as $order)
-      <div class="card m-auto mt-5" style="width: 18rem;">
-        <div class="card-header">
+      <div class="card m-auto mt-5" style="width: 22rem;">
+        <div class="card-header p-5">
           <h2>
-            Order made by:
+             Order made by:
           </h2>
-          <em class="fs-3">{{$order->name}}</em>
+          <em class="fs-3"><i class="fa-solid fa-user"></i> {{$order->name}}</em>
         </div>
-        <ul class="list-group list-group-flush">
+        <ul class="list-group list-group-flush p-2">
           <li class="list-group-item">
             
-          <span class="fw-bold"> Address:</span> {{$order->address}}
+          <span class="fw-bold"><i class="fa-sharp fa-solid fa-location-dot"></i>  Address:</span> {{$order->address}}
           
           </li>
           <li class="list-group-item">
-            <span class="fw-bold"> Phone number:</span> {{$order->phone_number}}
+            <span class="fw-bold"><i class="fa-solid fa-phone mr-0.5"></i> Phone number:</span> {{$order->phone_number}}
           </li>
           <li class="list-group-item">
             <p>
-             <span class="fw-bold"> Order status:</span> {{$order->status_order}}
+             <span class="fw-bold"> <i class="fa-solid fa-hourglass"></i> Order status:</span> {{$order->status_order}}
           </p>
           </li>
         </ul>
