@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\UserRestaurant;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
-use App\Models\UserRestaurant;
 
 
 
