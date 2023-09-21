@@ -9,4 +9,18 @@ use Illuminate\Database\Eloquent\Model;
 class Plate extends Model
 {
     use HasFactory;
+
+
+
+    protected $fillable = [
+        'name',
+        'description',
+        'plate_price',
+        'image',
+        'visibility'
+    ];
+
+    public function orders(){
+        return $this->belongsToMany(Order::class);
+    }
 }
