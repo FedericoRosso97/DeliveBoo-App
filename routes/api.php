@@ -30,18 +30,18 @@ Route::get('/plates', [ ApiPlateController::class, 'index' ])->name('api.plates.
 
 Route::get('/plates/{plate}', [  ApiPlateController::class, 'show' ])->name('api.plates.show');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Route::post('/plates/create', [ ApiPlateController::class, 'store'])->name('api.plates.create');
-//>>>>>>> plate-crud
-=======
-
->>>>>>> myOrders
-=======
+// <<<<<<< HEAD
 // <<<<<<< HEAD
 // Route::post('/plates/create', [ ApiPlateController::class, 'store'])->name('api.plates.create');
 // //>>>>>>> plate-crud
 // =======
 
-// >>>>>>> plate-crud
->>>>>>> e6f09e79b3fd34660babea12c215bd03b80a1f69
+// >>>>>>> myOrders
+// =======
+// // <<<<<<< HEAD
+// // Route::post('/plates/create', [ ApiPlateController::class, 'store'])->name('api.plates.create');
+// // //>>>>>>> plate-crud
+// // =======
+
+// // >>>>>>> plate-crud
+// >>>>>>> e6f09e79b3fd34660babea12c215bd03b80a1f69
