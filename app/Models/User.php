@@ -43,7 +43,7 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    public function restaurant(){
-        return $this->hasOne(Restaurant::class);
+    public function userRestaurant(){
+        return $this->hasOne(UserRestaurant::class);
     }
 }
