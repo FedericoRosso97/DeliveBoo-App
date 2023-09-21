@@ -1,0 +1,24 @@
+div.container_create{
+    width: 60%;
+    margin:auto;
+    margin-top: 5rem;
+}
+
+img.logo_deliveboo{
+    width: 99px;
+    height: 99px;
+}
+
+nav.navbar{
+    height: 80px;
+}
+
+div.radio{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+button.btn{
+    margin-right: 3rem;
+    width: 10rem;
+}

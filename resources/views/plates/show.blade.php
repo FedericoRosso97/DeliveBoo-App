@@ -41,7 +41,7 @@
       </ul>
       <div class="card-body d-flex justify-content-around">
         <button type="button" class="btn btn-primary"><a href="#" class="card-link text-warning">Edit</a></button>
-        <button type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-danger ">Delete</button>
       </div>
     </div>
     
