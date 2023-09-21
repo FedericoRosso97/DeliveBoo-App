@@ -34,10 +34,11 @@ ul {
 li {
     margin-right: 2rem;
 
-    a {
-        text-decoration: none;
-        color:white;
-    }
+}
+
+a {
+    text-decoration: none;
+    color:white;
 }
 
 .lower-header {
@@ -91,10 +92,10 @@ li {
 }
 
 .my_btn-g:hover{
-    color: #FDCF48;
+    color: #fdaf48;
     font-weight: bolder;
-    background-color: rgb(0, 0, 0);
-    border: 3px solid #FDCF48;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #fdaf48;
 }
 
 /*$BlueColor: #1695A6;
