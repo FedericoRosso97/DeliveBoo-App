@@ -3,14 +3,14 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\UserRestaurant;
+use App\Models\Restaurant;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 
 
 
-class UserRestaurantSeeder extends Seeder
+class RestaurantSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -21,7 +21,7 @@ class UserRestaurantSeeder extends Seeder
         $userIds = User::all()->pluck('id');
 
         foreach ($userIds as $userId){
-            $newRestaurant = new UserRestaurant();
+            $newRestaurant = new Restaurant();
             $newRestaurant->user_id = $userId;
             $newRestaurant->name = $faker->name();
             $newRestaurant->address = $faker->streetAddress();

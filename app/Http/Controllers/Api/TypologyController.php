@@ -13,6 +13,12 @@ class TypologyController extends Controller
     public function index()
     {
         //
+        $typology = Typology::all();
+        return response()->json([
+            'success'=>true,
+            'result'=>$typology 
+
+        ]);
     }
 
     /**
@@ -21,12 +27,7 @@ class TypologyController extends Controller
     public function create()
     {
         //
-        $typology = Typology::all();
-        return response()->json([
-            'success'=>true,
-            'result'=>$typology 
-
-        ]);
+        
     }
 
     /**

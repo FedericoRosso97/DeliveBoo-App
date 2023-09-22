@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_restaurants', function (Blueprint $table) {
+        Schema::create('restaurants', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id')->primary();
             $table->string('name')->required();
             $table->string('address')->required();
@@ -25,11 +25,11 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')
-                    ->references('id')
-                    ->on('users')
-                    ->onUpdate('cascade')
-                    ->cascadeOnDelete();
-        });
+            ->references('id')
+            ->on('users')
+            ->onUpdate('cascade')
+            ->cascadeOnDelete();
+});
     }
 
     /**
@@ -37,6 +37,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_restaurants');
+        Schema::dropIfExists('restaurants');
     }
 };
