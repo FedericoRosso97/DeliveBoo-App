@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Typology extends Model
 {
     use HasFactory;
-    /*public function restaurants(){
+    public function restaurants(){
         return $this->belongsToMany(Restaurant::class);
-    }*/
+    }
 }
