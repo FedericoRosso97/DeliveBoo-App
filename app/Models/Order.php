@@ -12,4 +12,8 @@ class Order extends Model
     public function plates(){
         return $this->belongsToMany(Plate::class);
     }
+
+    public function payments(){
+        return $this->hasOne(Payment::class);
+    }
 }
