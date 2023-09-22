@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('payments', function (Blueprint $table) {
+            
             $table->unsignedBigInteger('order_id')->primary();
             $table->string('date');
             $table->float('total_price');
