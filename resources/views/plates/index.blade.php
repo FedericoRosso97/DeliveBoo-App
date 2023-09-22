@@ -22,16 +22,14 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-
-
             <a href="http://127.0.0.1:8000/plates/create" class="me-5">
               Crea un nuovo piatto
             </a>
-
-
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
+          <a href="http://127.0.0.1:8000/home" class="me-5">
+            Dashboard
+        </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active " aria-current="page" href="#">Vai a restaurant</a>
