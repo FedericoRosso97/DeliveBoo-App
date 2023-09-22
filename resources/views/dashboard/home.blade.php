@@ -39,6 +39,12 @@
                                     Le mie statistiche
                                 </a>
                             </li>
+                            
+                            <li>
+                                <a href="http://localhost:5174/">
+                                    Home
+                                </a>
+                            </li>          
                         </ul>
                     </nav>
                     
