@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('plates', function (Blueprint $table) {
             //
 
-            $table->unsignedBigInteger('restaurant_id')->after('id');
+            $table->unsignedBigInteger('restaurant_id')->after('id')->nullable();
 
             $table->foreign('restaurant_id')
                 ->references('user_id')
