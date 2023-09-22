@@ -21,14 +21,14 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            // TypologySeeder::class,
+          
             PlateSeeder::class,
             OrderSeeder::class,
-            TypologySeeder::class,
             UserSeeder::class,
             RestaurantSeeder::class,
+            TypologySeeder::class,
             PaymentSeeder::class,
-
+            
         ]);
     }
 }

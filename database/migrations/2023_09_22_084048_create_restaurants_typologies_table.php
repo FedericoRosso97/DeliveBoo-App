@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('restaurants_typologies', function (Blueprint $table) {
+        Schema::create('restaurant_typology', function (Blueprint $table) {
                 $table->unsignedBigInteger('restaurant_id');
-                $table->foreign('restaurant_id')->references('user_id')->on('restaurants')->onUpdate('cascade')->onDelete('cascade');
+                $table->foreign('restaurant_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
     
                 $table->unsignedBigInteger('typology_id');
                 $table->foreign('typology_id')->references('id')->on('typologies')->onUpdate('cascade')->onDelete('cascade');
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('restaurants_typologies');
+        Schema::dropIfExists('restaurant_typology');
     }
 };
