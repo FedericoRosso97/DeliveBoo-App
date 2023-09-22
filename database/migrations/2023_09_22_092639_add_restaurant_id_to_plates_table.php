@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::table('plates', function (Blueprint $table) {
             //
+
+            $table->unsignedBigInteger('restaurant_id')->after('user_id');
+
+            $table->foreign('restaurant_id')
+                ->references('user_id')
+                ->on('categories')
+                ->onUpdate('cascade')
+                ->onDelete('set null');
+
         });
     }
 
@@ -23,6 +32,9 @@ return new class extends Migration
     {
         Schema::table('plates', function (Blueprint $table) {
             //
+            $table->dropForeign('plates_restaurant_id_foreign');
+
+            $table->dropColumn('restaurant_id');
         });
     }
 };
