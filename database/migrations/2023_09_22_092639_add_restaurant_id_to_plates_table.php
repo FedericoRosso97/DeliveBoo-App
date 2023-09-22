@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::table('plates', function (Blueprint $table) {
             //
 
-            $table->unsignedBigInteger('restaurant_id')->after('user_id');
+            $table->unsignedBigInteger('restaurant_id')->after('id');
 
             $table->foreign('restaurant_id')
                 ->references('user_id')
-                ->on('categories')
+                ->on('restaurants')
                 ->onUpdate('cascade')
                 ->onDelete('set null');
 
