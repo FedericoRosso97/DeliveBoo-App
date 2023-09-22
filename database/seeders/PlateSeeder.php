@@ -91,6 +91,8 @@ class PlateSeeder extends Seeder
             
         ];
 
+        $plateIds = Plate::all()->pluck('id')->toArray();
+
         foreach ($plateList as $plate){
             $newPlate = new Plate();
             $newPlate->name = $plate['name'];
@@ -100,6 +102,8 @@ class PlateSeeder extends Seeder
             $newPlate->visibility = $plate['visibility'];
 
             $newPlate->save();
+
+            $newPlate->plate()->sync($faker->randomElement($plateIds));
 
         }
         
