@@ -21,12 +21,23 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
+<<<<<<< HEAD
           
             PlateSeeder::class,
             OrderSeeder::class,
             UserSeeder::class,
             RestaurantSeeder::class,
             TypologySeeder::class,
+=======
+
+
+            UserSeeder::class,
+            RestaurantSeeder::class,
+            TypologySeeder::class,
+            PlateSeeder::class,
+            OrderSeeder::class,
+
+>>>>>>> origin/definitivo-relazione-risto-plates
             PaymentSeeder::class,
             
         ]);

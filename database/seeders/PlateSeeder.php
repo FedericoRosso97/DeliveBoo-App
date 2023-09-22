@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Plate;
+use App\Models\Restaurant;
 use Faker\Generator as Faker;
 
 class PlateSeeder extends Seeder
@@ -91,8 +92,11 @@ class PlateSeeder extends Seeder
             
         ];
 
+        $restaurantIds = Restaurant::all()->pluck('user_id')->toArray();
+
         foreach ($plateList as $plate){
             $newPlate = new Plate();
+            $newPlate->restaurant_id = $faker->randomElement($restaurantIds);
             $newPlate->name = $plate['name'];
             $newPlate->description = $plate['description'];
             $newPlate->plate_price = $plate['plate_price'];
@@ -100,6 +104,7 @@ class PlateSeeder extends Seeder
             $newPlate->visibility = $plate['visibility'];
 
             $newPlate->save();
+
 
         }
         
