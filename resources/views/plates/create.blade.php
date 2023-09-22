@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-
-
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +14,7 @@
     <!--header -->
     <div class="upper-header">
         <img src="/img/logo_deliveboo.png" alt="DeliveBoo brand image">
-        <a href="http://127.0.0.1:8000/plates" class="me-5">
+        <a href="http://127.0.0.1:8000/home" class="me-5">
             Vai al menù
         </a>
     </div>
@@ -53,23 +50,37 @@
             <h1 class='text-center mb-5'>
                 Create New Plate
             </h1>
-            <form action="{{ route ('plates.store')}}" method='POST'>
+
+            <form action="{{ route ('plates.store')}}" method='POST'enctype="multipart/form-data">
                 @csrf
-                <div class="mb-3">
+
+                @error('name')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
+                <div class="mb-5">
                     <label for="name" class="form-label">Nome del piatto</label>
-                    <input type="text" class="form-control" id="name" name='name'>
+                    <input type="text" class="form-control" id="name"  placeholder="Inserisci il nome del tuo piatto" name="name" value="{{ old('name', 'Oops non manca il nome del piatto') }}">
                 </div>
-                <div class="mb-3">
+
+
+                @error('description')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
+                <div class="mb-5">
                     <label for="description" class="form-label">Descrizione del piatto</label>
-                    <input type="text" class="form-control" id="description" name='description'>
+                    <input type="text" class="form-control" id="description" placeholder="Inserisci la descrizione del tuo piatto" name="description" value="{{ old('description', 'Oops non manca la descrizione del piatto') }}">
                 </div>
-                <div class="mb-3">
+
+                @error('plate_price')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
+                <div class="mb-5">
                     <label for="plate_price" class="form-label">Prezzo</label>
-                    <input type="text" class="form-control" id="plate_price" name='plate_price'>
+                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price">
                 </div>
-
-
-
 
                 <!--DOBBIAMO RICORDARCI TUTTI DI SETTARE DA PRIVATE A PUBLIC FILE ENV da guardare slide 85-->
                 <div class="mb-5">
@@ -99,7 +110,6 @@
                         Reset
                     </button>
                 </div>
-
             </form>
         </div>
 
