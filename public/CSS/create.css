@@ -10,7 +10,11 @@ img.logo_deliveboo{
 }
 
 nav.navbar{
-    height: 80px;
+    height: 120px;
+}
+
+div.container_fluid{
+    height: 100%;
 }
 
 div.radio{

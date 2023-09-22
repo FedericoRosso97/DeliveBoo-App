@@ -12,18 +12,10 @@
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
 
 <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-warning link-underline" href="#"><img  class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Torna alla dashboard</a>
-        </li>
-      </ul>
-    </div>
+  <div class=" container-fluid d-sm-flex justify-content-sm-between justify-content-lg-start align-items-center">
+    <a class="navbar-brand text-warning link-underline" href="/home"><img  class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
+    <a class="nav-link active text-light me-4" aria-current="page" href="#">Torna alla dashboard</a>
+    <a class="nav-link active text-light" aria-current="page"  href="/plates">Torna a myFoods</a>
   </div>
 </nav>
     
@@ -41,7 +33,7 @@
         </li>
       </ul>
       <div class="card-body d-flex justify-content-around">
-        <button type="button" class="btn btn-primary"><a href="#" class="card-link text-warning">Edit</a></button>
+        <button type="button" class="btn btn-primary"><a href="{{ route ('plates.edit', $plate->id)}}" class="card-link text-warning">Edit</a></button>
         <button type="button" class="btn btn-danger ">Delete</button>
       </div>
     </div>
