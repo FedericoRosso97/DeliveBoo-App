@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-warning" aria-current="page" href="#">Torna alla dashboard</a>
+          <a class="nav-link active text-warning" aria-current="page" href="http://127.0.0.1:8000/plates?plate=13#">menù</a>
         </li>
       </ul>
     </div>
@@ -40,7 +40,9 @@
         </li>
       </ul>
       <div class="card-body d-flex justify-content-around">
-        <button type="button" class="btn btn-primary"><a href="#" class="card-link text-warning">Edit</a></button>
+        <button type="button" class="btn btn-primary"><a href="http://127.0.0.1:8000/plates/1/edit
+
+" class="card-link text-warning">Edit</a></button>
         <button type="button" class="btn btn-danger">Delete</button>
       </div>
     </div>

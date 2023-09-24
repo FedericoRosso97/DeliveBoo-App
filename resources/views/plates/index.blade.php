@@ -23,7 +23,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a href="http://127.0.0.1:8000/plates/create" class="me-5">
-              Crea un nuovo piatto
+              Crea nuovo piatto
             </a>
           </li>
           <li class="nav-item">

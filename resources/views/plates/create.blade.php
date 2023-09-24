@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Create</title>
+    <title>Crea nuovo piatto</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +16,12 @@
 
     <!--NAVBAR -->
     <div class="upper-header">
-        <img src="/img/logo_deliveboo.png" alt="DeliveBoo brand image">
+        <a href="http://localhost:5174/">
+            <img src="/img/logo_deliveboo.png" alt="DeliveBoo brand image">
+        </a>
+        <a href="http://127.0.0.1:8000/plates/">
+            Piatti
+        </a>
         <a href="http://127.0.0.1:8000/home" class="me-5">
             Dashboard
         </a>
@@ -25,7 +31,7 @@
         <div class="searchBar">
             <div class="choose-box">
                 <h1>
-                    Crea un nuovo piatto
+                    Crea nuovo piatto
                 </h1>
             </div>
         </div>
@@ -54,9 +60,9 @@
             </h1>
 
 
-                <!--FORM  PER LA COMPILAZIONE DEL NUOVO PIATTO-->
+            <!--FORM  PER LA COMPILAZIONE DEL NUOVO PIATTO-->
 
-            <form action="{{ route ('plates.store')}}" method='POST'enctype="multipart/form-data">
+            <form action="{{ route ('plates.store')}}" method='POST' enctype="multipart/form-data">
                 @csrf
 
                 <!--NOME PIATTO-->
@@ -66,7 +72,7 @@
 
                 <div class="mb-5">
                     <label for="name" class="form-label">Nome del piatto</label>
-                    <input type="text" class="form-control" id="name"  placeholder="Inserisci il nome del tuo piatto" name="name" value="{{ old('name', 'Oops manca il nome del piatto') }}">
+                    <input type="text" class="form-control" id="name" placeholder="Inserisci il nome del tuo piatto" name="name" value="{{ old('name', 'Oops manca il nome del piatto') }}">
                 </div>
 
                 <!--DESCRIZIONE PIATTO -->
