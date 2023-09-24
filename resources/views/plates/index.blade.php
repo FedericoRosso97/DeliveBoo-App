@@ -18,22 +18,22 @@
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
     <!-- Example Code -->
 
-    <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-warning link-underline" href="/home"><img class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
+    <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid p-2">
+    <a class="navbar-brand link-underline" href="/home"><img class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-light" href="/plates/create">Add a new food</a>
+          <a class="text-warning nav-link active " href="/plates/create">Add a new food</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Torna alla dashboard</a>
+          <a class="text-warning nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Vai a restaurant</a>
+          <a class="text-warning nav-link active" aria-current="page" href="#">Vai a restaurant</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

@@ -11,11 +11,11 @@
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
 
-<nav class="navbar navbar-expand-lg bg-primary">
-  <div class=" container-fluid d-sm-flex justify-content-sm-between justify-content-lg-start align-items-center">
-    <a class="navbar-brand text-warning link-underline" href="/home"><img  class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
-    <a class="nav-link active text-light me-4" aria-current="page" href="#">Torna alla dashboard</a>
-    <a class="nav-link active text-light" aria-current="page"  href="/plates">Torna a myFoods</a>
+<nav class="navbar navbar-expand-lg">
+  <div class=" container-fluid d-sm-flex justify-content-sm-between justify-content-lg-start align-items-center ">
+    <a class="navcolor navbar-brand text-warning link-underline" href="/home"><img  class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
+    <a class="navcolor nav-link active text-warning me-4" aria-current="page" href="#">Torna alla dashboard</a>
+    <a class="navcolor nav-link active text-warning" aria-current="page"  href="/plates">Torna a myFoods</a>
   </div>
 </nav>
     

@@ -21,10 +21,10 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Torna alla dashboard</a>
+          <a class="nav-link active text-warning" aria-current="page" href="#">Torna alla dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page"  href="/plates">Torna a myFoods</a>
+          <a class="nav-link active text-warning" aria-current="page"  href="/plates">Torna a myFoods</a>
         </li>
       </ul>
     </div>

@@ -11,6 +11,10 @@ img.logo_deliveboo{
 
 nav.navbar{
     height: 120px;
+    margin-bottom: 12rem;
+    background-color:  #24B0C1;
+    color: #FDCF48;
+    
 }
 
 div.container_fluid{
@@ -25,4 +29,13 @@ div.radio{
 button.btn{
     margin-right: 3rem;
     width: 10rem;
+}
+
+div.container-fluid{
+    background-color:  #24B0C1;
+    color: #FDCF48;
+}
+
+a.navColor{
+    color: #FDCF48;
 }
