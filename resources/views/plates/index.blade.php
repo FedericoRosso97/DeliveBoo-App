@@ -11,7 +11,7 @@
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
     />
-    <title>Bootstrap Example</title>
+    <title>Deliveboo</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">

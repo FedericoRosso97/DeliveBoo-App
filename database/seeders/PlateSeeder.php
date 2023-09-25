@@ -210,6 +210,65 @@ class PlateSeeder extends Seeder
                 'visibility' => true,
             ],
             [
+                'name' => 'El Pulled Burrito',
+                'description' => 'Riso basmati, pulled pork, fagioli rossi, pico de gallo, panna acida e guacamole',
+                'plate_price' => '9,90 €',
+                'image' => 'https://cheatdaydesign.com/wp-content/uploads/2022/05/Pulled-Pork-Burrito-Recipe-720x405.jpg',
+                'visibility' => false,
+            ],
+            [
+                'name' => 'El Chili Burrito',
+                'description' => 'Riso basmati, chili con carne, cheddar, pico de gallo, salsa chili, panna acida e guacamole',
+                'plate_price' => '9,90 €',
+                'image' => 'https://elmonterey.com/wp-content/uploads/2022/05/02309-8pk-GrnChiliBurr-HeroFoodImage.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'Tacos Fried Chicken',
+                'description' => 'Fried chicken, Cheese mix, Insalata e Sour Cream',
+                'plate_price' => '2,70 €',
+                'image' => 'https://images-gmi-pmc.edge-generalmills.com/daab231c-fe99-4a41-83ca-15d863564572.jpg',
+                'visibility' => false,
+            ],
+            [
+                'name' => 'Quesadilla Burger',
+                'description' => 'Burger, Cheese mix e salsa Smoky pepper',
+                'plate_price' => '5,55 €',
+                'image' => 'https://grillonadime.com/wp-content/uploads/2023/03/blackstone-cheeseburger-quesadilla-11-2.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'Nachos Ricos',
+                'description' => 'Nachos e chili con carne ricoperti di salsa creamy jalapeño, guacamole fresco, pico de gallo e panna acida',
+                'plate_price' => '5,00 €',
+                'image' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nachos-cheese.jpg/800px-Nachos-cheese.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'Vegetarian Samosa',
+                'description' => 'Fagottino ripieno di verdure cotte',
+                'plate_price' => '2,00 €',
+                'image' => 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/samosa-recipe.jpg',
+                'visibility' => false,
+            ],
+            [
+                'name' => 'Chicken curry',
+                'description' => 'Bocconcini di pollo cotti con curry e spezie',
+                'plate_price' => '8,20 €',
+                'image' => 'https://www.cookingclassy.com/wp-content/uploads/2018/08/chicken-curry-11.jpg',
+                'visibility' => true,
+            ],
+            [
+                'name' => 'Vegetable biryani',
+                'description' => 'Riso basmati cotto con verdure miste',
+                'plate_price' => '7,50 €',
+                'image' => 'https://www.cookwithmanali.com/wp-content/uploads/2019/09/Vegetable-Biryani-Restaurant-Style.jpg',
+                'visibility' => true,
+            ],
+
+
+
+            [
                 'name' => 'Smoke Burgez Menu',
                 'description' => 'Carne, cheddar, bacon e Smoke Burgez Sauce',
                 'plate_price' => '7,45 €',
