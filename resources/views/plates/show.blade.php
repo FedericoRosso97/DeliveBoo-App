@@ -38,7 +38,7 @@
         <form action="{{ route('plates.destroy', $plate) }}" method="POST">
           @csrf
           @method('delete')
-          <button type="button" class="btn btn-danger ">Delete</button>
+          <button type="submit" class="btn btn-danger me-0">Delete</button>
         </form>
       </div>
     </div>
