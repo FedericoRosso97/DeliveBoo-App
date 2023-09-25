@@ -17,7 +17,8 @@ return new class extends Migration
             $table->unsignedBigInteger('restaurant_id')->after('id')->nullable();
 
             $table->foreign('restaurant_id')
-                ->references('user_id')
+                //->references('user_id')
+                ->references('id')//prova da cancellare poi,se non funziona
                 ->on('restaurants')
                 ->onUpdate('cascade')
                 ->onDelete('set null');

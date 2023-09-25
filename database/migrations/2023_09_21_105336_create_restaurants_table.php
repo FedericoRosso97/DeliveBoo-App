@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('restaurants', function (Blueprint $table) {
-            $table->unsignedBigInteger('user_id')->primary();
-           // $table->id('user_id')->primary();
+          
+            $table->id();
+            $table->unsignedBigInteger('user_id');//->primary();
             $table->string('name')->required();
             $table->string('address')->required();
             $table->integer('VAT_number')->required();
