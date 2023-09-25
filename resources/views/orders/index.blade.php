@@ -11,8 +11,8 @@
     <link href="/CSS/create.css" rel="stylesheet">
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
-  <nav class="navbar navbar-expand-lg bg-primary">
-  <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid p-2">
     <a class="navbar-brand text-warning link-underline" href="#"><img class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
           <a class="nav-link active text-light" aria-current="page" href="#">Torna alla dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-light " aria-current="page" href="#">Visualizza le statistiche</a>
+          <a class="nav-link active text-light" aria-current="page" href="#">Visualizza le statistiche</a>
         </li>
       </ul>
       <form class="d-flex" role="search">

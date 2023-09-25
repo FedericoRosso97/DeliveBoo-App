@@ -27,13 +27,13 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="text-warning nav-link active " href="/plates/create">Add a new food</a>
+          <a class="text-light nav-link active " href="/plates/create">Add a new food</a>
         </li>
         <li class="nav-item">
-          <a class="text-warning nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
+          <a class="text-light nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="text-warning nav-link active" aria-current="page" href="#">Vai a restaurant</a>
+          <a class="text-light nav-link active" aria-current="page" href="#">Vai a restaurant</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
