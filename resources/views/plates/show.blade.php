@@ -34,7 +34,12 @@
       </ul>
       <div class="card-body d-flex justify-content-around">
         <button type="button" class="btn btn-primary"><a href="{{ route ('plates.edit', $plate->id)}}" class="card-link text-warning">Edit</a></button>
-        <button type="button" class="btn btn-danger ">Delete</button>
+
+        <form action="{{ route('plates.destroy', $plate) }}" method="POST">
+          @csrf
+          @method('delete')
+          <button type="button" class="btn btn-danger ">Delete</button>
+        </form>
       </div>
     </div>
     
