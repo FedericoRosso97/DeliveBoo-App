@@ -1,0 +1,136 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.upper-header {
+    background-color: #1695A6;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 150px;
+        margin-left: 10rem;
+    }
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 2rem;
+
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.lower-header {
+    background-color: #FDCF48;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+
+
+    .choose-box {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            color: #F8F8F8;
+        }
+    }
+}
+
+.searchBar {
+    width: 50%;
+    padding: 2.5rem;
+    background-color: #24B0C1;
+    border: 7px solid white;
+    border-radius: 2rem;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+}
+
+.btn{
+    border-radius: 2rem;
+    padding-bottom: 10px;
+}
+
+
+.my_btn-b{
+    background-color: #24B0C1;
+    color: white;
+}
+
+.my_btn-b:hover{
+    color:  #24B0C1;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #1695A6;
+}
+
+.my_btn-g{
+    background-color: #FDCF48;
+}
+
+.my_btn-g:hover{
+    color: #fdaf48;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #fdaf48;
+}
+
+/*$BlueColor: #1695A6;
+$LightBlueColor: #24B0C1;
+$YellowColor: #FDCF48;
+$WhiteColor: #F8F8F8;*/
+
+
+/*
+div.type-restaurant-title{
+    margin-top: 10rem;
+    h2{
+        text-align: center;
+    }
+}
+
+div.restourant-types{
+    margin: 0 auto;
+    width: 85%;
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+            text-align: center;
+            width: 30%;
+            background-color: $BlueColor;
+            margin-top: 2rem;
+            padding: 1rem 0;
+            border-radius: 1rem;
+            border: 2px solid $LightBlueColor;
+            h3{
+                color: white;
+            }
+        }
+    }
+}*/
