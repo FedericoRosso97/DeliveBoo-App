@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +17,7 @@
     <link href="/CSS/create.css" rel="stylesheet">
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
-    <!-- Example Code -->
+
 
     <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid p-2">
@@ -41,50 +41,11 @@
         <input class="form-control me-2 " type="search" placeholder="Search food" aria-label="Search">
         <button class="btn btn-outline-warning" type="submit">Search</button>
       </form>
-=======
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
-  <title>index</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</head>
 
-<body class="p-0 m-0 border-0 bd-example m-0 border-0">
-  <!-- Example Code -->
 
-  <nav class="navbar navbar-expand-lg upper-header">
-    <div class="container-fluid">
-      <a class="navbar-brand text-warning link-underline" href="#"><img src="" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a href="http://127.0.0.1:8000/plates/create" class="me-5">
-              Crea nuovo piatto
-            </a>
-          </li>
-          <li class="nav-item">
-          <a href="http://127.0.0.1:8000/home" class="me-5">
-            Dashboard
-        </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#">Vai a restaurant</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning" type="submit">Search</button>
-        </form>
-      </div>
->>>>>>> origin/Edit-branch
     </div>
-  </nav>
+  </nav> 
 
   @foreach ($plates as $plate)
 
@@ -120,8 +81,6 @@
   @endforeach
 
 
-
-  <!-- End Example Code -->
 </body>
 
 </html>
