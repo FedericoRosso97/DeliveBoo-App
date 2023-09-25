@@ -91,8 +91,12 @@ class PlateController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Plate $plate)
     {
         //
+
+        $plate->delete();
+
+        return redirect()->route('plates.index');
     }
 }

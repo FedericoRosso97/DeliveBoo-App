@@ -1,0 +1,41 @@
+div.container_create{
+    width: 60%;
+    margin:auto;
+    margin-top: 5rem;
+}
+
+img.logo_deliveboo{
+    width: 99px;
+    height: 99px;
+}
+
+nav.navbar{
+    height: 120px;
+    margin-bottom: 12rem;
+    background-color:  #24B0C1;
+    color: #FDCF48;
+    
+}
+
+div.container_fluid{
+    height: 100%;
+}
+
+div.radio{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+button.btn{
+    margin-right: 3rem;
+    width: 10rem;
+}
+
+div.container-fluid{
+    background-color:  #24B0C1;
+    color: #FDCF48;
+}
+
+a.navColor{
+    color: #FDCF48;
+}
