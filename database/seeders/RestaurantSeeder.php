@@ -21,8 +21,8 @@ class RestaurantSeeder extends Seeder
         //
         $userIds = User::all()->pluck('id');
        
-
-        foreach ($userIds as $userId){
+        $typologyIds = Typology::all()->pluck('id')->toArray();
+        foreach ( $userIds as  $userId){
             $newRestaurant = new Restaurant();
             $newRestaurant->user_id = $userId;
             $newRestaurant->name = $faker->name();
@@ -34,6 +34,8 @@ class RestaurantSeeder extends Seeder
             $newRestaurant->telephone_number = $faker->phoneNumber();
             $newRestaurant->vote= $faker->randomFloat(2, 1, 5);
             $newRestaurant->save();
+
+           $newRestaurant->typologies()->sync([$faker->randomElement($typologyIds)]);
         }
     }
 }

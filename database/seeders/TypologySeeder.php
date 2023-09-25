@@ -20,14 +20,15 @@ class TypologySeeder extends Seeder
                  'italiano', 'internazionale', 'cinese', 'giapponese','messicano', 
                  'indiano', 'pesce', 'carne', 'pizza',
                 ];
-        $restaurantIds = restaurant::all()->pluck('user_id')->toArray();
-        foreach ($Array as $array){
+        //$restaurantIds = Restaurant::all()->pluck('user_id')->toArray();
+        //$Restaurant =  Restaurant::all()->pluck('user_id');
+        foreach ($Array  as $array ){
           
            $typology= new Typology();
            $typology->name = $array;
            $typology->save();
 
-           $typology->restaurants()->sync([$faker->randomElement( $restaurantIds)]);
+           //$typology->restaurants()->sync([$faker->randomElement( $restaurantIds)]);
         }
     }
 }
