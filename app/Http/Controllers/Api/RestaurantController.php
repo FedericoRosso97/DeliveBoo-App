@@ -14,7 +14,7 @@ class RestaurantController extends Controller
     public function index()
     {
         //
-        $restaurant = Restaurant::all();
+        $restaurant = Restaurant::with('typologies')->paginate(5);//,modifica tentativo 
         return response()->json([
             'success'=>true,
             'result'=>$restaurant
