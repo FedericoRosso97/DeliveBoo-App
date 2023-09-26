@@ -33,7 +33,7 @@ class OrderSeeder extends Seeder
             $newOrder->address = $faker->address();
             $newOrder->save();
 
-            $newOrder->plates()->sync([$faker->randomElement($plateIds)]);
+            $newOrder->plates()->sync([$faker->randomElement($plateIds)]); 
 
         }
 
