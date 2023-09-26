@@ -59,7 +59,7 @@
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror                <div class="mb-5">
                     <label for="plate_price" class="form-label">Prezzo</label>
-                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price" value="{{ old('plate_price', 'Oops manca il prezzo del piatto') }}">
+                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price" value="{{ old('plate_price', '$plate->price') }}">
                 </div>                <!--DOBBIAMO RICORDARCI TUTTI DI SETTARE DA PRIVATE A PUBLIC FILE ENV da guardare slide 85-->
                 <div class="mb-5">
                     <label for="image" class="form-label">
