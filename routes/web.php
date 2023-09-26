@@ -27,4 +27,4 @@ Route::middleware('auth')->group( function() {
     Route::resource('/plates', PlateController::class);
 });
 
-Route::get('orders', [OrderController::class, 'index'])->name('index');
+Route::get('orders', [OrderController::class, 'index'])->name('orders.index');

@@ -17,19 +17,19 @@
                     <nav class="my-dashboard-nav">
                         <ul>
                             <li>
-                                <a href="">
+                                <a href="{{ route('home') }}">
                                     Il mio ristorante
                                 </a>
                             </li>
 
                             <li>
-                                <a href="">
+                                <a href="{{ route('plates.index') }}">
                                     Il mio menù
                                 </a>
                             </li>
 
                             <li>
-                                <a href="">
+                                <a href="{{ route('orders.index') }}">
                                     I miei ordini
                                 </a>
                             </li>
