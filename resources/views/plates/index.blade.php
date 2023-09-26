@@ -52,9 +52,9 @@
 
 
 
-    <h1 class="text-center">
-      Your Plate's List
-    </h1>
+  <h1 class="text-center">
+    Your Plate's List
+  </h1>
   <div class="container d-flex row">
   @foreach ($plates as $plate)
 
