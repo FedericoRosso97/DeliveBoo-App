@@ -15,4 +15,5 @@ class OrderController extends Controller
         $orders = Order::all();
         return view('orders.index', compact('orders'));
     }
+    
 }
