@@ -3,7 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlateController as PlateController;
 use App\Http\Controllers\OrderController as OrderController;
+<<<<<<< HEAD
 use App\Http\Controllers\BraintreeController;
+=======
+use App\Http\Controllers\RestaurantController as RestaurantController;
+>>>>>>> ramo-login
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,4 +34,12 @@ Route::middleware('auth')->group( function() {
 
 Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
 
+<<<<<<< HEAD
 Route::any('/payment', [BraintreeController::class, 'token'])->name('token')->middleware('auth');
+=======
+//---Restaurants routes---//
+Route::middleware('auth')->group( function() {
+    Route::resource('/restaurants', RestaurantController::class);
+});
+
+>>>>>>> ramo-login

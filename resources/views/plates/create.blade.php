@@ -41,7 +41,8 @@
 -->        <div class="col-8 mx-auto">
             <h1 class='text-center mb-5'>
                 Create New Plate
-            </h1>            <!--FORM  PER LA COMPILAZIONE DEL NUOVO PIATTO-->            <form action="{{ route ('plates.store')}}" method='POST' enctype="multipart/form-data">
+            </h1>            <!--FORM  PER LA COMPILAZIONE DEL NUOVO PIATTO-->           
+             <form action="{{ route ('plates.store')}}" method='POST' enctype="multipart/form-data">
                 @csrf                <!--NOME PIATTO-->
                 @error('name')
                 <div class="alert alert-danger">{{ $message }}</div>

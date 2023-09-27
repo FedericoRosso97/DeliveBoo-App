@@ -47,34 +47,13 @@
                             </li>          
                         </ul>
                     </nav>
+                    <div class="">
+                        <p>nessun ristorante trovato</p>
+                        <a href="{{route('restaurants.create')}}">
+                            crea il tuo ristorante
+                        </a>
+                    </div>
                     
-                    <section class="my-dashboard-content ms-5">
-                        <h2 class="mb-4">
-                            Il mio ristorante:
-                        </h2>
-                        <p>
-                            Nome:
-                        </p>
-                        <p>
-                            Indirizzo:
-                        </p>
-                        <p>
-                            Email:
-                        </p>
-                        <p>
-                            Orario di apertura:
-                        </p>
-                        <p>
-                            immagine:
-                        </p>
-                        <p>
-                            Numero di telefono:
-                        </p>
-                        <div class="d-flex">
-                            <button class="btn btn-primary me-3">
-                                Modifica i tuoi dati
-                            </button>
-                    </section>
                 </div>
             </div>
         </div>
