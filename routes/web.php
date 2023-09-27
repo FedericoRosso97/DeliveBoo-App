@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlateController as PlateController;
 use App\Http\Controllers\OrderController as OrderController;
+use App\Http\Controllers\RestaurantController as RestaurantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,9 @@ Route::middleware('auth')->group( function() {
 });
 
 Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+
+//---Restaurants routes---//
+Route::middleware('auth')->group( function() {
+    Route::resource('/restaurants', RestaurantController::class);
+});
+
