@@ -2,9 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;//add
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
 use App\Models\Typology;
+//add
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Storage;
 
 class RestaurantController extends Controller
 {
@@ -38,7 +44,7 @@ class RestaurantController extends Controller
         $data = $request->validate([
             'name' => ['required', 'unique:restaurants','min:3', 'max:255'],
             'address'=>['required','min:10'],
-            'VAT_number' => ['required', 'min:10'],
+            'VAT_number' => ['required', 'min:8'],
             'typologies' => ['exists:typologies,id'],
            // 'id' => ['required', 'exists:categories,id'],
         ]);
