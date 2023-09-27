@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');//->primary();
             $table->string('name')->required();
-            $table->string('address')->required();
+            $table->string('address')->required()->unique();
             $table->bigInteger('VAT_number')->required();
             //$table->string('email')->unique();
             $table->float('opening_time');

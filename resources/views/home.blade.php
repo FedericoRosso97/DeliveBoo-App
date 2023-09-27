@@ -17,7 +17,7 @@
                     <nav class="my-dashboard-nav">
                         <ul>
                             <li>
-                                <a href="{{ route('home') }}">
+                                <a href="#">
                                     Il mio ristorante
                                 </a>
                             </li>
@@ -49,9 +49,11 @@
                     </nav>
                     <div class="">
                         <p>nessun ristorante trovato</p>
+                      
                         <a href="{{route('restaurants.create')}}">
                             crea il tuo ristorante
                         </a>
+
                     </div>
                     
                 </div>
