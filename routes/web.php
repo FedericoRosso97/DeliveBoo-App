@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlateController as PlateController;
 use App\Http\Controllers\OrderController as OrderController;
+use App\Http\Controllers\BraintreeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +29,5 @@ Route::middleware('auth')->group( function() {
 });
 
 Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+
+Route::any('/payment', [BraintreeController::class, 'token'])->name('token')->middleware('auth');
