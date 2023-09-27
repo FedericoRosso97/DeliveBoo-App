@@ -17,7 +17,7 @@
                     <nav class="my-dashboard-nav">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="{{route('restaurants.create')}}">
                                     Il mio ristorante
                                 </a>
                             </li>
@@ -47,14 +47,6 @@
                             </li>          
                         </ul>
                     </nav>
-                    <div class="">
-                        <p>nessun ristorante trovato</p>
-                      
-                        <a href="{{route('restaurants.create')}}">
-                            crea il tuo ristorante
-                        </a>
-
-                    </div>
                     
                 </div>
             </div>
