@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
 
-    <title>Index myFoods</title>
+    <title>Plate's list</title>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="/CSS/create.css" rel="stylesheet">
