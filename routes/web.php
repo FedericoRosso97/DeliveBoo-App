@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlateController as PlateController;
 use App\Http\Controllers\OrderController as OrderController;
-use App\Models\Chart;
+use App\Http\Controllers\ChartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +31,4 @@ Route::middleware('auth')->group( function() {
 
 Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
 
-Route::get('charts', [ChartController::class, 'index'])->name('charts.index');
+Route::get('/Line-chart', [ChartController::class, 'LineChart']);
