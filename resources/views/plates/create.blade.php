@@ -21,7 +21,7 @@
         <div class="searchBar">
             <div class="choose-box">
                 <h1>
-                    Crea nuovo piatto
+                    Crea un nuovo piatto
                 </h1>
             </div>
         </div>
