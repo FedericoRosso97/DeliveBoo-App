@@ -9,8 +9,7 @@
                     {{ $restaurant->name }}
                 </h4>
                 <h5 class="card-header"> ID: {{ $restaurant->id }}
-                    {{ $restaurant->typology ? $restaurant->typology->name : 'non ci sono tipologie' }}</h5>
-                   
+                
 
                 <div class="card-body">
                     <h5 class="card-title">

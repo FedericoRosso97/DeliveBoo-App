@@ -27,8 +27,8 @@ class RestaurantSeeder extends Seeder
             $newRestaurant->user_id = $userId;
             $newRestaurant->name = $faker->name();
             $newRestaurant->address = $faker->streetAddress();
-            $newRestaurant->VAT_number = $faker->randomNumber(6,true);
-            $newRestaurant->email = $faker->email();
+            $newRestaurant->VAT_number = $faker->randomNumber(9,true);
+           // $newRestaurant->email = $faker->email();
             $newRestaurant->opening_time= $faker->randomFloat(2, 1, 12);
             $newRestaurant->image= $faker->imageUrl(640, 480, 'foods', true);
             $newRestaurant->telephone_number = $faker->phoneNumber();
