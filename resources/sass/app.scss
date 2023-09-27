@@ -39,7 +39,7 @@ nav.my-dashboard-nav{
 }
 
 
-div.container{
+div.plate-container{
     margin: 0 auto;
     max-width: 1200px;
     justify-content: space-between;
@@ -49,7 +49,7 @@ div.container{
     position: relative;
 
 
-    div.card{
+    div.plate-card{
         max-width: 300px;
         position: relative;
         display: flex;
@@ -87,24 +87,22 @@ div.container{
     }
 }
 
-div.content{
+div.plate-content{
     position: relative;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
     height: 100%;
-
-
 }
 
-.container .card:hover .content{
+.plate-container .plate-card:hover .plate-content{
     visibility: visible;
     opacity: 1;
     color: black;
     transition-delay: 0.3s;
 }
 
-div.content a{
+div.plate-content a{
     background-color: #24B0C1;
     border: #FDCF48 1px solid;
     padding: .7rem 2rem;

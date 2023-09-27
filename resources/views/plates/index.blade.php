@@ -55,14 +55,14 @@
   <h1 class="text-center">
     Your Plate's List
   </h1>
-  <div class="container d-flex row">
+  <div class="plate-container d-flex row">
   @foreach ($plates as $plate)
 
-    <div class="card col-12 col-md-6 col-lg-4 ">
+    <div class="plate-card col-12 col-md-6 col-lg-4 ">
       <div class="img-box">
         <img src="{{$plate->image}}" alt="{{$plate->name}}">
       </div>
-      <div class="content">
+      <div class="plate-content">
         <h2>
           {{ $plate->name }}
         </h2>
