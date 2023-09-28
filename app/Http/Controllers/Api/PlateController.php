@@ -13,7 +13,7 @@ class PlateController extends Controller
      */
     public function index()
     {
-        $plates = Plate::paginate(10);
+        $plates = Plate::paginate(40);
 
         return response()->json(
             [
