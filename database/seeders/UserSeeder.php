@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
         $newUser->save();
 
 
-        for ($i=0; $i < 30; $i++) {
+        for ($i=0; $i < 200; $i++) {
             $newUser = new User();
             $newUser->name = $faker->name();
             $newUser->email= $faker->email();
