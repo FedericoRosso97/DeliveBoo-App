@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="my-deliveboo-nav navbar navbar-expand-md shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-light text-uppercase" href="{{ url('/') }}">
+                <a class="navbar-brand text-light text-uppercase" href="http://127.0.0.1:8000/home">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <a class="navbar-brand text-light" href="{{ url('/') }}">

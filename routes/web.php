@@ -18,7 +18,7 @@ use App\Http\Controllers\RestaurantController as RestaurantController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
