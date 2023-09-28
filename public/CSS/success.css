@@ -1,15 +1,15 @@
-div.container_create{
+.container_create{
     width: 60%;
     margin:auto;
     margin-top: 5rem;
 }
 
-img.logo_deliveboo{
+.logo_deliveboo{
     width: 99px;
     height: 99px;
 }
 
-nav.navbar{
+.navbar{
     height: 120px;
     margin-bottom: 12rem;
     background-color:  #24B0C1;
@@ -17,16 +17,16 @@ nav.navbar{
     
 }
 
-div.container_fluid{
+.container_fluid{
     height: 100%;
 }
 
-div.radio{
+.radio{
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-div.container-fluid{
+.container-fluid{
     background-color:  #24B0C1;
     color: #FDCF48;
 }
