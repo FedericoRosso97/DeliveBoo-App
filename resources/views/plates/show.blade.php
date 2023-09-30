@@ -38,13 +38,19 @@
       </ul>
       <div class="card-body d-flex justify-content-around">
 
-        <button type="button" class="btn btn-primary"><a href="{{ route ('plates.edit', $plate->id)}}" class="card-link text-warning">Edit</a></button>
+        <button type="button" class="btn my_btn-b me-3">
+          <a href="{{ route ('plates.edit', $plate->id)}}" class="">
+            Edit
+          </a>
+        </button>
 
 
         <form action="{{ route('plates.destroy', $plate) }}" method="POST">
           @csrf
           @method('delete')
-          <button type="submit" class="btn btn-danger me-0">Delete</button>
+          <button type="submit" class="btn btn-danger me-0">
+            Delete
+          </button>
         </form>
 
         

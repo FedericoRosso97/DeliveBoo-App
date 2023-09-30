@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PlateController as PlateController;
 use App\Http\Controllers\OrderController as OrderController;
-use App\Http\Controllers\ChartController;
+use App\Http\Controllers\ChartController as ChartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +30,6 @@ Route::middleware('auth')->group( function() {
 });
 
 Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
+//Route::any('/payment', [BraintreeController::class, 'token'])->name('token')->middleware('auth');
 
-Route::get('/Line-chart', [ChartController::class, 'LineChart']);
+Route::get('/line-chart', [ChartController::class, 'LineChart']);

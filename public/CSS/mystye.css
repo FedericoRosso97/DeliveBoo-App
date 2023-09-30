@@ -5,12 +5,19 @@
     box-sizing: border-box;
 }
 
+.upper-header{
+    background-color: #1695A6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.upper-header {
+}
+
+.left-header {
     background-color: #1695A6;
     height: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     img {
@@ -96,6 +103,10 @@ a {
     font-weight: bolder;
     background-color: rgb(255, 255, 255);
     border: 3px solid #fdaf48;
+}
+
+.invisibile{
+    color: white;
 }
 
 /*$BlueColor: #1695A6;

@@ -26,16 +26,56 @@ div.radio{
     margin-top: 2rem;
 }
 
-button.btn{
-    margin-right: 3rem;
-    width: 10rem;
+a{
+    text-decoration: none;
+    color: white;
 }
+
+a:hover{
+    color:  #24B0C1;
+}
+
+
+
+.btn{
+    border-radius: 2rem;
+    padding-bottom: 10px;
+}
+
+.my_btn-b{
+    background-color: #24B0C1;
+    color: white;
+}
+
+.my_btn-b:hover{
+    color:  #24B0C1;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #1695A6;
+}
+
+.my_btn-g{
+    background-color: #FDCF48;
+}
+
+.my_btn-g:hover{
+    color: #fdaf48;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #fdaf48;
+}
+
+.btn-danger:hover{
+    color: red;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid red;
+
+}
+
 
 div.container-fluid{
     background-color:  #24B0C1;
     color: #FDCF48;
 }
 
-a.navColor{
-    color: #FDCF48;
-}

@@ -11,37 +11,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/success.css">
-    <!--
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {
-            'packages': ['corechart']
-        });
-        google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['mese', 'ordini'],
-                ['gennaio',  400],
-                ['febbraio',  460],
-                ['marzo', 1120],
-                ['aprile', 1040]
-            ]);
-
-            var options = {
-                title: 'Statistiche ordini',
-                curveType: 'function',
-                legend: {
-                    position: 'bottom'
-                }
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-            chart.draw(data, options);
-        }
-    </script>
-    -->
 </head>
 
 <body class="p-0 m-0 border-0 bd-example m-0 border-0">
@@ -56,7 +26,7 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="text-light nav-link active " href="/plates/create">Add a new food</a>
+                        <a class="text-light nav-link active " href="/plates/create">Crea piatto</a>
                     </li>
                     <li class="nav-item">
                         <a class="text-light nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
