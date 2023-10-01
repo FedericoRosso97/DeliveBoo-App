@@ -11,7 +11,7 @@
     <link href="/CSS/create.css" rel="stylesheet">
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg mb-3">
   <div class="container-fluid p-2">
     <a class="navbar-brand text-warning link-underline" href="http://127.0.0.1:8000/home"><img class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,38 +32,39 @@
       </form>
     </div>
   </div>
-</nav>
-
+</nav>    
   
-    
-    <ul>
-      @foreach ($orders as $order)
-      <div class="card m-auto mt-5" style="width: 22rem;">
-        <div class="card-header p-5">
-          <h2>
-             Order made by:
-          </h2>
-          <em class="fs-3"><i class="fa-solid fa-user"></i> {{$order->name}}</em>
-        </div>
-        <ul class="list-group list-group-flush p-2">
-          <li class="list-group-item">
-            
-          <span class="fw-bold"><i class="fa-sharp fa-solid fa-location-dot"></i>  Address:</span> {{$order->address}}
-          
-          </li>
-          <li class="list-group-item">
-            <span class="fw-bold"><i class="fa-solid fa-phone mr-0.5"></i> Phone number:</span> {{$order->phone_number}}
-          </li>
-          <li class="list-group-item">
-            <p>
-             <span class="fw-bold"> <i class="fa-solid fa-hourglass"></i> Order status:</span> {{$order->status_order}}
-          </p>
-          </li>
-        </ul>
-      </div>
-      @endforeach
-  </ul>
-    
+  <table class="table mt-0">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Order Status</th>
+    </tr>
+  </thead>
+  @foreach($orders as $order)
+  <tbody>
+    <tr>
+      <th scope="row"> {{$order->id}}</th>
+      <td>{{$order->name}}</td>
+      <td>{{$order->address}}</td>
+      <td>{{$order->phone_number}}</td>
+      <td> {{$order->status_order}}</td>
+    </tr>
+  </tbody>
+  @endforeach
+</table>
+ 
+
+
+
+
+
+
+
+
     <!-- End Example Code -->
   </body>
 </html>
