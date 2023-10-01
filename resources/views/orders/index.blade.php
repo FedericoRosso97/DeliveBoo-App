@@ -11,7 +11,7 @@
     <link href="/CSS/create.css" rel="stylesheet">
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
-  <nav class="navbar navbar-expand-lg mb-3">
+  <nav class="navbar navbar-expand-lg mb-5">
   <div class="container-fluid p-2">
     <a class="navbar-brand text-warning link-underline" href="http://127.0.0.1:8000/home"><img class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mb-sm-5">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Torna alla dashboard</a>
+          <a class="nav-link active text-light" aria-current="page" href="http://127.0.0.1:8000/home">Torna alla dashboard</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active text-light" aria-current="page" href="#">Visualizza le statistiche</a>
@@ -34,7 +34,7 @@
   </div>
 </nav>    
   
-  <table class="table mt-0">
+  <table class="table">
   <thead>
     <tr>
       <th scope="col">Id</th>
