@@ -19,18 +19,28 @@ class RestaurantSeeder extends Seeder
     public function run(Faker $faker): void
     {
         //
+        $restaurantName = [
+            "Pizzeria Ciccio",
+            
+        ];
+
+
+        $restaurantImage = [
+            "",
+        ];
+
         $userIds = User::all()->pluck('id');
        
         $typologyIds = Typology::all()->pluck('id')->toArray();
         foreach ( $userIds as  $userId){
             $newRestaurant = new Restaurant();
             $newRestaurant->user_id = $userId;
-            $newRestaurant->name = $faker->name();
+            $newRestaurant->name = $faker->randomElement($restaurantName);
             $newRestaurant->address = $faker->streetAddress();
             $newRestaurant->VAT_number = $faker->randomNumber(9,true);
-           // $newRestaurant->email = $faker->email();
+            $newRestaurant->email = $faker->email();
             $newRestaurant->opening_time= $faker->randomFloat(2, 1, 12);
-            $newRestaurant->image= $faker->imageUrl(640, 480, 'foods', true);
+            $newRestaurant->image= $faker->randomElement($restaurantName);
             $newRestaurant->telephone_number = $faker->phoneNumber();
             $newRestaurant->vote= $faker->randomFloat(2, 1, 5);
             $newRestaurant->save();
