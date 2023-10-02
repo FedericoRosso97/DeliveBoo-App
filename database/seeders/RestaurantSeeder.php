@@ -43,12 +43,12 @@ class RestaurantSeeder extends Seeder
         foreach ( $userIds as  $userId){
             $newRestaurant = new Restaurant();
             $newRestaurant->user_id = $userId;
-            $newRestaurant->name = $faker->$restaurantName;
+            $newRestaurant->name = $faker->randomElement($restaurantName);
             $newRestaurant->address = $faker->streetAddress();
             $newRestaurant->VAT_number = $faker->randomNumber(9,true);
-            $newRestaurant->email = $faker->email();
+            // $newRestaurant->email = $faker->email();
             $newRestaurant->opening_time= $faker->randomFloat(2, 1, 12);
-            $newRestaurant->image= $faker->randomElement($restaurantName);
+            $newRestaurant->image= $faker->randomElement($restaurantImage);
             $newRestaurant->telephone_number = $faker->phoneNumber();
             $newRestaurant->vote= $faker->randomFloat(2, 1, 5);
             $newRestaurant->save();
