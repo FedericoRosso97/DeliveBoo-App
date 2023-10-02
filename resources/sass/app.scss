@@ -15,28 +15,81 @@ div.my-dashboard-header{
     background-color: $LightBlueColor;
 }
 
-nav.my-dashboard-nav{
-    width: 170px;
-    ul{
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        li{
-            list-style-type: none;
-            background-color: $YellowColor;
-            padding: 0.2rem 0;
-            border-radius: 0.3rem;
-            // border: 1px solid black;
-            text-align: center;
-            a{
-                text-decoration: none;
-                color: black;
-            }
-        }
-    }
+div.dashboard-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 3.8rem;
+    font-size: 30px;
 }
+
+.buttn {
+    width: 100%; 
+    color: #fff;
+    cursor: pointer;
+    // display: block;
+    font-size:30px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 400px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.dash-link {
+    background: rgba($white, 0);
+    border-bottom: 1px solid;
+    color: $white; 
+    line-height: 3;
+    padding: .25em;
+    text-decoration: none;
+    
+    &:hover {
+      background: rgba($white, 1);
+      color: $blue;
+    }
+  }
+
+.btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+    letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#1795a8, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+.btn-2:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+}
+
+
 
 
 div.plate-container{
@@ -83,8 +136,6 @@ div.plate-container{
                 border-radius: 4px;
                 object-fit: cover;
             }
-
-            
         }
     }
 }

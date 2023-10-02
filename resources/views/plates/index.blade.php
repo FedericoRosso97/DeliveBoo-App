@@ -35,10 +35,7 @@
               <a class="text-light nav-link active " href="/plates/create">Add a new food</a>
             </li>
             <li class="nav-item">
-              <a class="text-light nav-link active" aria-current="page" href="#">Torna alla dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="text-light nav-link active" aria-current="page" href="#">Vai a restaurant</a>
+              <a class="text-light nav-link active" aria-current="page" href="http://127.0.0.1:8000/home">Torna alla dashboard</a>
             </li>
           </ul>
           <form class="d-flex" role="search">

@@ -14,7 +14,7 @@
             <a href="http://localhost:5174/">
                 <img src="/img/logo_deliveboo.png" alt="DeliveBoo brand image">
             </a>
-            <a href="http://127.0.0.1:8000/plates/">
+            <a href="{{ route('plates.destroy', $plate) }}">
                 Piatti
             </a>
             <a href="http://127.0.0.1:8000/home" class="me-5">
@@ -69,7 +69,7 @@
                 @enderror                
                 <div class="mb-5">
                     <label for="plate_price" class="form-label">Prezzo</label>
-                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price" value="{{ old('plate_price', '$plate->plate_price') }}">
+                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price" >
                 </div>       
                     <!--DOBBIAMO RICORDARCI TUTTI DI SETTARE DA PRIVATE A PUBLIC FILE ENV da guardare slide 85-->
                 <div class="mb-5">

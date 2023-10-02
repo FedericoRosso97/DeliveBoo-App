@@ -6,30 +6,27 @@
         <div class="col-12">
             <div class="card">
                 <h4 class="card-header">
-                    {{ $restaurant->name }}
+                    Restaurant's name: {{ $restaurant->name }}
                 </h4>
                 <h5 class="card-header"> ID: {{ $restaurant->id }}
                 
 
                 <div class="card-body">
                     <h5 class="card-title">
-                        {{ $restaurant->address}}
+                        Your address: {{ $restaurant->address}}
                     </h5>
                     <p class="card-text">
-                        {{ $restaurant->VAT_number }}
+                        Your VAT_Number: {{ $restaurant->VAT_number }}
                     </p>
-                    <a href="#" class="btn btn-sm btn-success">
-                        Edit
-                    </a>
-                    <form class="d-inline-block" action="#" method="POST">
-                        @csrf
-                        @method('DELETE')
-
-                        <button type="submit" class="btn btn-sm btn-warning">
-                            Delete
-                        </button>
-                    </form>
                 </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-outline-warning mt-5">
+                    <a href="http://127.0.0.1:8000/home">
+                        Torna alla dashboard
+                    </a>
+                </button>
             </div>
         </div>
     </div>
