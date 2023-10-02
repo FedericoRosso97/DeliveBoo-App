@@ -54,11 +54,11 @@
                     <input type="text" class="form-control" id="address" rows="7" name="address">{{ old('address', '') }}</input>
                 </div>
 
-                <div class="mb-3">
-                    <button type="submit" class="me-3">
+                <div class="mb-3 text-center">
+                    <button type="submit" class="me-3 btn btn-outline-warning">
                        Registra il tuo ristorante
                     </button>
-                    <button type="reset">
+                    <button type="reset" class="btn btn btn-outline-warning">
                         Reset
                     </button>
                 </div>

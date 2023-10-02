@@ -19,10 +19,10 @@ return new class extends Migration
             $table->string('address')->required()->unique();
             $table->bigInteger('VAT_number')->required();
             //$table->string('email')->unique();
-            $table->float('opening_time');
-            $table->string('image');
-            $table->string('telephone_number');
-            $table->float('vote');
+            $table->float('opening_time')->nullable();
+            $table->string('image')->nullable();
+            $table->string('telephone_number')->nullable();
+            $table->float('vote')->nullable();
 
             $table->timestamps();
 

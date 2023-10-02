@@ -48,19 +48,19 @@
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror                <div class="mb-5">
                     <label for="name" class="form-label">Nome del piatto</label>
-                    <input type="text" class="form-control" id="name" placeholder="Inserisci il nome del tuo piatto" name="name" value="{{ old('name', 'Oops manca il nome del piatto') }}">
+                    <input type="text" class="form-control" id="name" placeholder="Inserisci il nome del tuo piatto" name="name" value="{{ old('name', '') }}">
                 </div>                <!--DESCRIZIONE PIATTO -->
                 @error('description')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror                <div class="mb-5">
                     <label for="description" class="form-label">Descrizione del piatto</label>
-                    <input type="text" class="form-control" id="description" placeholder="Inserisci la descrizione del tuo piatto" name="description" value="{{ old('description', 'Oops manca la descrizione del piatto') }}">
+                    <input type="text" class="form-control" id="description" placeholder="Inserisci la descrizione del tuo piatto" name="description" value="{{ old('description', '') }}">
                 </div>                <!--PREZZO PIATTO -->
                 @error('plate_price')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror                <div class="mb-5">
                     <label for="plate_price" class="form-label">Prezzo</label>
-                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price" value="{{ old('plate_price', 'Oops manca il prezzo del piatto') }}">
+                    <input type="text" class="form-control" id="plate_price" placeholder="Inserisci il prezzo del tuo piatto" name="plate_price" value="{{ old('plate_price', '') }}">
                 </div>                <!--DOBBIAMO RICORDARCI TUTTI DI SETTARE DA PRIVATE A PUBLIC FILE ENV da guardare slide 85-->
                 <div class="mb-5">
                     <label for="image" class="form-label">
