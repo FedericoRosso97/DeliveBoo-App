@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Deliveboo') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -19,15 +19,15 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="home">
     <div id="app">
         <nav class="my-deliveboo-nav navbar navbar-expand-md shadow-sm">
             <div class="container">
                 <a class="navbar-brand text-light text-uppercase" href="http://127.0.0.1:8000/home">
-                    {{ config('app.name', 'Laravel') }}
+                    <img class="logo_deliveboo" src="/img/logo_deliveboo.png" alt="logo">
                 </a>
-                <a class="navbar-brand text-light" href="{{ url('/') }}">
-                    Business
+                <a class="navbar-brand text-light" href="{{ url('/') }}" >
+                    
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
