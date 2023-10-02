@@ -58,11 +58,11 @@ class RestaurantSeeder extends Seeder
             "https://www.scattidigusto.it/wp-content/uploads/2023/09/pizza-Sogni-di-Latte-pizzeria-Da-Lioniello-a-Succivo.jpg",
             "https://media.istockphoto.com/id/938742222/it/foto/pizza-al-peperoni-di-formaggio.jpg?s=612x612&w=0&k=20&c=-t1owSb9A8akOoiJFAQDGm9dTxNMCfGOuuonRLJ5opw=",
             "https://www.verdictfoodservice.com/wp-content/uploads/sites/17/2023/04/Rudys-Pizza-Napoletana.jpg",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "https://restaurantportals.com/wp-content/uploads/2023/02/Easiest-Pizza_22-2_11.jpg",
+            "https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/07/19/11/yard-sale-pizza-1907.jpg?width=1200&auto=webp&quality=75",
+            "https://fox8.com/wp-content/uploads/sites/12/2023/05/343941682_941546873928296_1407044339773499757_n-1.jpg",
+            "https://www.deliciousmagazine.co.uk/wp-content/uploads/2020/02/Best-Pizza-Restaurants-London.jpg",
+            "https://www.ristorantelespecialita.it/wp-content/uploads/2016/05/condimenti-per-pizza-lespecialita.jpg",
             "",
 
         ];
