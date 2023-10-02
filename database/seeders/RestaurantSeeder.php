@@ -20,6 +20,7 @@ class RestaurantSeeder extends Seeder
     {
         //
         $restaurantName = [
+            //pizzerie
             "Pizzeria Amalia",
             "Pizzeria Amore",
             "Pizzeria L'arte della Pizza",
@@ -36,23 +37,32 @@ class RestaurantSeeder extends Seeder
             "Pizzeria Pizza Lovers",
             "Pizzeria Cornicione e Cuore",
             "Pizzeria L'algoritmo della Pizza",
-            "Pizzeria L'algoritmo della Pizza",
-            "Pizzeria L'algoritmo della Pizza",
-            "Pizzeria L'algoritmo della Pizza",
-            "Pizzeria L'algoritmo della Pizza",
+            "Pizzeria Questione di Pizza",
+            "Pizzeria C'è Pizza & Pizza",
+            "Pizzeria Pronti, Partenza, Pizza",
+            "Pizzeria L'Alchimia della della Pizza",
+
+            //cinese
+            "China Town",
+            "I cinque elementi",
+            "Uovo Centenario",
+            "Le 5 leggende",
+            "Il grande Panda"
+
         ];
 
 
         $restaurantImage = [
+
+            //Pizzerie
             "https://diegocortes.it/wp-content/uploads/2021/03/pizzeria-900x550.jpeg",
-            "https://m.media-amazon.com/images/I/51RPpTJkaUS._AC_UF894,1000_QL80_.jpg",
             "https://www.traplettipittori.ch/wp-content/uploads/2019/03/pizzeria.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQcwUQQiofxCk0-jBwT1yTSQjDvCvKQnVgMl9LCsvo4uKMpkVQ7-p0sWhSTqae16vSJc&usqp=CAU",
             "https://www.horecabc.pl/wp-content/uploads/2022/02/pizza3.webp",
             "https://skycolor24.pl/photo/jpg/02/20/36/51/240_F_220365180_228e9M6HbPRGIjihitrAjbYw1D05uqZn.jpg",
             "https://www.aprireinfranchising.it/useruploads/images/costi-per-aprire-pizzeria-e-idee-per-finanziarla.jpg",
             "https://www.seostefano.it/wp-content/uploads/2019/05/pizza-forno-legna.jpg",
-            
+            "https://img.grouponcdn.com/deal/4ypmACg2SqzhN8m4zNjB/qu-700x420/v1/t600x362.jpg",
             "https://www.namesnack.com/images/namesnack-pizza-business-names-5184x3456-20200915.jpeg?crop=21:16,smart&width=420&dpr=2",
             "https://garage.pizza/wp-content/uploads/2019/11/DSCF5096-570x570.jpg",
             "https://www.scattidigusto.it/wp-content/uploads/2023/09/pizza-Sogni-di-Latte-pizzeria-Da-Lioniello-a-Succivo.jpg",
@@ -63,7 +73,32 @@ class RestaurantSeeder extends Seeder
             "https://fox8.com/wp-content/uploads/sites/12/2023/05/343941682_941546873928296_1407044339773499757_n-1.jpg",
             "https://www.deliciousmagazine.co.uk/wp-content/uploads/2020/02/Best-Pizza-Restaurants-London.jpg",
             "https://www.ristorantelespecialita.it/wp-content/uploads/2016/05/condimenti-per-pizza-lespecialita.jpg",
+            "https://www.ristorantelespecialita.it/wp-content/uploads/2016/05/condimenti-per-pizza-lespecialita.jpg",
+
+            //Cinese
+            "https://www.hongkongcucciago.it/assets/img-temp/about/ristorante_cinese2.jpg",
+            "https://static.cookist.it/wp-content/uploads/sites/21/2020/02/cucina-cinese-migliori-ristoranti-in-italia.jpg",
+            "https://www.napolitoday.it/~media/horizontal-hi/7847824910662/copertina-cucina-cinese-2.jpg",
             "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+
+
+
 
         ];
 
