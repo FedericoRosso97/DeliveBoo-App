@@ -47,23 +47,26 @@ div.my-dashboard{
     flex-direction: column;
     flex-wrap: wrap;
 
-    div.box{
-        height: 33.33%;
-        width: 100%; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    
+}
 
-        .btn {
-            line-height: 100px;
-            height: 100px;
-            text-align: center;
-            width: 450px;
-            cursor: pointer;
-            margin-bottom: 2rem;
-        }
-    }
+div.box{
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem; 
+}
+
+.btn {
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    width: 450px;
+    cursor: pointer;
+    margin-bottom: 2rem;
 }
 
 .btn-one {
@@ -73,6 +76,7 @@ div.my-dashboard{
 }
 .btn-one span {
     transition: all 0.3s;
+
 }
 .btn-one::before {
     content: '';
@@ -92,6 +96,7 @@ div.my-dashboard{
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
 }
+
 .btn-one:hover span {
     letter-spacing: 2px;
 }
