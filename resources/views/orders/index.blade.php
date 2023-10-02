@@ -19,17 +19,11 @@
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 mb-sm-5">
-<<<<<<< HEAD
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="http://127.0.0.1:8000/">Torna alla dashboard</a>
-=======
+
         <li class="nav-item"> 
           <a class="nav-link active text-light" aria-current="page" href="http://127.0.0.1:8000/home">Torna alla dashboard</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Visualizza le statistiche</a>
->>>>>>> myOrdersModified
-        </li>
+
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2 " type="search" placeholder="Search order" aria-label="Search">
